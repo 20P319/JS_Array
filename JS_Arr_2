@@ -1,0 +1,14 @@
+//PUSH,POP,SHIFT,UNSHIFT
+let cargoHold=['oxygen tanks','space suits','parrot','instruction manual','meal packs','slinky','security blanket'];
+console.log(cargoHold); //print  ['oxygen tanks','space suits','parrot','instruction manual','meal packs','slinky','security blanket']
+cargoHold[cargoHold.indexOf('slinky')]='space tether';
+console.log(cargoHold); //print ['oxygen tanks','space suits','parrot','instruction manual','meal packs','space tether','security blanket']
+console.log("Poped element: "+cargoHold.pop()); // print  Poped element: security blanket
+console.log(cargoHold); // print ['oxygen tanks','space suits','parrot','instruction manual','meal packs','space tether']
+console.log("Shifted element: "+cargoHold.shift()); // print  Shifted element: oxygen tanks
+console.log(cargoHold); // print ['space suits','parrot','instruction manual','meal packs','space tether']
+cargoHold.push(1138);
+console.log(cargoHold); // print [1138,'space suits','parrot','instruction manual','meal packs','space tether']
+cargoHold.unshift('20 meters');
+console.log(cargoHold); // print ['20 meters','space suits','parrot','instruction manual','meal packs','space tether',1138]
+console.log("Array length: "+cargoHold.length); // print  Array length: 7
